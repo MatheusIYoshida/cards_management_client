@@ -1,23 +1,23 @@
 <div class="login-form">
   <app-form-input
-    [EnableLabel]="true"
-    [LabelText]="'Email'"
-    [Type]="'email'"
-    [PlaceholderText]="'your@email.com'"
-    [MaxLength]="100"
+    [enableLabel]="true"
+    [labelText]="'Email'"
+    [type]="'email'"
+    [placeholderText]="'your@email.com'"
+    [maxLength]="100"
   ></app-form-input>
   <app-form-input
-    [EnableLabel]="true"
-    [LabelText]="'Password'"
-    [Type]="'password'"
-    [PlaceholderText]="'********'"
-    [MaxLength]="100"
+    [enableLabel]="true"
+    [labelText]="'Password'"
+    [type]="'password'"
+    [placeholderText]="'********'"
+    [maxLength]="100"
   ></app-form-input>
   <app-form-button 
-    [BtnText]="'SIGN IN'"
+    [btnText]="'SIGN IN'"
   ></app-form-button>
-  <div class="divider">Or</div>
+  <div class="divider">{{ dividerText }}</div>
   <div class="signup-link">
-    Don't have an account? <a href="#">Sign up</a>
+    {{ signupText }} <a href="#">{{ signupLinkText }}</a>
   </div>
 </div>

@@ -9,5 +9,7 @@ import { FormButton } from '../shared/ui/form-button/form-button';
   styleUrl: './login.scss',
 })
 export class Login {
-
+  dividerText: string = 'or';
+  signupText: string = "Don't have an account?";
+  signupLinkText: string = 'Sign up';
 }

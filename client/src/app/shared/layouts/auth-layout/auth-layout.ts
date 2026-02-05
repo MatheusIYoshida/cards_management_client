@@ -8,5 +8,7 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './auth-layout.scss',
 })
 export class AuthLayout {
-
+  brandIcon: string = 'C';
+  brandName: string = 'Cards Tracker';
+  slogan: string = 'Track your progress, visualize your impact';
 }

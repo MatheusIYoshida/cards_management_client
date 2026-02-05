@@ -1,9 +1,9 @@
 <div class="form">
-    @if (EnableLabel) {
-        <label class="form-label">{{ LabelText }}:</label>
+    @if (enableLabel) {
+        <label class="form-label">{{ labelText }}:</label>
     }
     <input class="form-input" 
-        [attr.placeholder]="PlaceholderText" 
-        [attr.maxlength]="MaxLength"
-        [attr.type]="Type"/>
+        [attr.placeholder]="placeholderText" 
+        [attr.maxlength]="maxLength"
+        [attr.type]="type"/>
 </div>    

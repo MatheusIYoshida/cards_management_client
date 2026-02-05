@@ -7,9 +7,9 @@ import { Component, Input } from '@angular/core';
   styleUrl: './form-input.scss',
 })
 export class FormInput {
-  @Input() EnableLabel!: boolean;
-  @Input() LabelText!: string;
-  @Input() MaxLength!: number;
-  @Input() PlaceholderText: string = '';
-  @Input() Type: string = 'text';
+  @Input() enableLabel!: boolean;
+  @Input() labelText!: string;
+  @Input() maxLength!: number;
+  @Input() placeholderText: string = '';
+  @Input() type: string = 'text';
 }

@@ -7,5 +7,5 @@ import { Component, Input } from '@angular/core';
   styleUrl: './form-button.scss',
 })
 export class FormButton {
-  @Input() BtnText!: string;
+  @Input() btnText!: string;
 }
