@@ -1,12 +1,23 @@
 <div class="login-form">
   <app-form-input
-    [enableLabel]="true"
-    [labelText]="'Email'"
-    [maxLength]="100"
+    [EnableLabel]="true"
+    [LabelText]="'Email'"
+    [Type]="'email'"
+    [PlaceholderText]="'your@email.com'"
+    [MaxLength]="100"
   ></app-form-input>
   <app-form-input
-    [enableLabel]="true"
-    [labelText]="'Password'"
-    [maxLength]="100"
+    [EnableLabel]="true"
+    [LabelText]="'Password'"
+    [Type]="'password'"
+    [PlaceholderText]="'********'"
+    [MaxLength]="100"
   ></app-form-input>
+  <app-form-button 
+    [BtnText]="'SIGN IN'"
+  ></app-form-button>
+  <div class="divider">Or</div>
+  <div class="signup-link">
+    Don't have an account? <a href="#">Sign up</a>
+  </div>
 </div>

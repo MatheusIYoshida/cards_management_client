@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { FormInput } from '../shared/ui/form-input/form-input';
+import { FormButton } from '../shared/ui/form-button/form-button';
 
 @Component({
   selector: 'app-login',
-  imports: [FormInput],
+  imports: [FormInput, FormButton],
   templateUrl: './login.html',
   styleUrl: './login.scss',
 })

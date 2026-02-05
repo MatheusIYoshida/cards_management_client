@@ -1,7 +1,6 @@
 @use '../../../../styles/variables' as vars;
 
 .auth{
-    font-family: 'Sora', sans-serif;
     position: fixed;
     top: 0;
     left: 0;
@@ -75,11 +74,11 @@
     flex-direction: column;
     align-items: center;
     height: 100%;
-    max-height: 425px;
+    max-height: 450px;
     width: 100%;
     max-width: 350px;
     padding: 40px;
-    border: 2px solid #334155;
+    border: 2px solid vars.$border-color;
     border-radius: 20px;
     background-color: #1e293b;
     color: #fff;
@@ -104,7 +103,7 @@
         height: 40px;
         border-radius: 5px;
         font-size: 24px;
-        background-color: #6366f1;
+        background-color: vars.$primary;
         box-shadow: 0 8px 32px rgba(99, 102, 241, 0.4);
     }
 
