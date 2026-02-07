@@ -4,16 +4,20 @@ import { AuthLayout } from './shared/layouts/auth-layout/auth-layout';
 export const routes: Routes = [
     {
         path: '',
-        redirectTo: 'login',
+        redirectTo: 'auth/login',
         pathMatch: 'full'
     },
     {
-        path: 'login',
+        path: 'auth',
         component: AuthLayout,
         children: [
             {
                 path: 'login',
                 loadComponent: () => import('./login/login').then(m => m.Login)
+            },
+            {
+                path: 'register',
+                loadComponent: () => import('./register/register').then(m => m.Register)
             },
             {
                 path: '',
@@ -25,7 +29,7 @@ export const routes: Routes = [
                 redirectTo: 'login'
             }
         ]
-    },
+    }
     // {
     //     path: 'dashboard',
     //     component:
