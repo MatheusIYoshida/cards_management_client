@@ -1,0 +1,25 @@
+@use '../../styles/variables' as vars;
+
+.register-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+app-form-button {
+    margin: 10px;
+} 
+
+.signin-link a{
+    color: vars.$primary;
+    text-decoration: none;
+    font-weight: 500;
+    opacity: .8;
+    transition: all 0.3s ease;
+}
+
+.signin-link a:hover{
+    opacity: 1;
+}
